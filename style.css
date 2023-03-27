@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated--blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+  height: 100vh;
+  background-color: var(--Dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -50rem left -60rem, bottom -65rem right -60rem;
+}
+
+.container {
+  max-width: 32.6rem;
+  background-color: white;
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.bg {
+  display: block;
+  width: 100%;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.user__avatar {
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 50%;
+  outline: 5px solid white;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -110%);
+}
+
+.user__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7.2rem;
+}
+
+.user__name {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: var(--Very-dark-desaturated--blue);
+}
+
+.user__age {
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: var(--Dark-grayish-blue);
+  margin-left: 0.8rem;
+}
+
+.user__city {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  margin-top: 1.3rem;
+  color: var(--Dark-grayish-blue);
+}
+
+.line {
+  background-color: #e8e9ec;
+  height: 0.1rem;
+  width: 100%;
+  display: block;
+  margin-top: 2.8rem;
+}
+
+.statistic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 2.4rem 0;
+}
+
+.numbers {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-align: center;
+
+  color: var(--Very-dark-desaturated--blue);
+}
+
+.stat__name {
+  margin-top: .9rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+
+  color: var(--Dark-gray);
+}
+
+
+@media screen  and (min-width: 90rem){
+   .container {
+    max-width: 35rem;
+   }
+
+}
